@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/agregacion-master/Objeto.h
+iostream
+-
+Tipos.h
+D:/agregacion-master/Tipos.h
+
+D:/agregacion-master/Tierra.cpp
+Tierra.h
+D:/agregacion-master/Tierra.h
+string
+-
+iomanip
+-
+algorithm
+-
+
+D:/agregacion-master/Tierra.h
+iostream
+-
+vector
+-
+Tipos.h
+D:/agregacion-master/Tipos.h
+Objeto.h
+D:/agregacion-master/Objeto.h
+
+D:/agregacion-master/Tipos.h
+string
+-
+limits
+-
+

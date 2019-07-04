@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Menu.cpp
+Menu.h
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Menu.h
+Objeto.h
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Objeto.h
+iostream
+-
+string
+-
+cstdio
+-
+
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Menu.h
+limits
+-
+Tierra.h
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Tierra.h
+Tipos.h
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Tipos.h
+
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Objeto.h
+iostream
+-
+Tipos.h
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Tipos.h
+
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Tierra.h
+iostream
+-
+vector
+-
+Tipos.h
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Tipos.h
+Objeto.h
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Objeto.h
+
+/cygdrive/d/C++ Clion/POO 1/13 Robots - copia/agregacion-master/Tipos.h
+string
+-
+

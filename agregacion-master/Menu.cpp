@@ -1,7 +1,3 @@
-//
-// Created by ruben on 6/10/19.
-//
-
 #include "Menu.h"
 #include <iostream>
 #include <string>
@@ -35,26 +31,39 @@ void Menu::imprimirMenu() {
 
 
 void Menu::agregarObjeto() {
-    auto    nombre = input<TipoString>("Ingrese Nombre : ");
+    int n = 0;
+
+
+
+    auto nombre = input<TipoString>(" Ingrese Nombre : ");
+
+
+
     auto color  = input<TipoCaracter>("Ingrese color (Un caracter): ");
 
-    auto x = input<TipoEntero>("Ingrese posicion X : ");
 
+    do{
+        n = 0;
+        auto x = input<TipoEntero>("Ingrese posicion X : ");
+        while (x < 0 || x >= tierra.getAncho()) {
+            cout << "Posicion X Incorrecta, los limites son: 0, "
+                 << tierra.getAncho() - 1 << "\n";
+            x = input<TipoEntero>("Ingrese posicion X : ");
+        }
+        TipoEntero y = input<TipoEntero>("Ingrese posicion Y : ");
+        while (y < 0 || y >= tierra.getAncho()) {
+            cout << "Posicion Y Incorrecta, los limites son: 0, "
+                 << tierra.getAltura() - 1 << "\n";
+            y = input<TipoEntero>("Ingrese posicion Y : ");
+        }
+        if(y == x){
+            cout << "Existe un obstaculo escoja otra posicion." << endl;
+            n++;
+        }
+        else
+            tierra.adicionarObjeto(new Objeto(nombre, color, x, y));
+    }while (n > 0);
 
-    while (x < 0 || x >= tierra.getAncho()) {
-        cout << "Posicion X Incorrecta, los limites son: 0, "
-             << tierra.getAncho() - 1 << "\n";
-        x = input<TipoEntero>("Ingrese posicion X : ");
-    }
-
-    TipoEntero y = input<TipoEntero>("Ingrese posicion Y : ");
-    while (y < 0 || y >= tierra.getAncho()) {
-        cout  << "Posicion Y Incorrecta, los limites son: 0, "
-              << tierra.getAltura() - 1 << "\n";
-        y = input<TipoEntero>("Ingrese posicion Y : ");
-    }
-
-    tierra.adicionarObjeto(new Objeto(nombre, color, x, y));
 }
 
 void Menu::removerObjeto() {
